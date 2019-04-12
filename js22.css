@@ -1,0 +1,704 @@
+/*div
+{
+width: 300px
+;
+height: 10px;	
+
+transform: translate(0px,0px);
+}*/
+body{
+animation-name: anime;
+animation-duration: 1.2s;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+@keyframes anime{
+    0%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+button
+{
+	width: 300px;
+	height: 50px;
+	background-color: #2F4F4F;
+	border-radius: 10px;
+	border-color: transparent;
+	text-decoration: none;
+	text-align: center;
+	color: #ace2fd;
+	box-shadow: 2px 2px dimgray;
+	transform: translate(390px, 10px);
+	padding: 15px;
+	z-index: -1;
+	font-family: "courier new", sans serif;
+    opacity: .95;
+
+
+}
+
+button:hover
+{
+
+	background-color: #008585;
+	transition: 0.4s ease;
+	text-decoration-color: white;  
+    opacity: 1;
+
+}
+#sid span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 20;
+  right: -40px;
+  transition: 0.5s;
+}
+
+#sid:hover span {
+  padding-right: 25px;
+}
+
+#sid:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+#outer
+{
+
+height: 100px;
+width: 700px;
+background-color: #DDFFFE;
+border-radius: 10px;
+transform: translate(420px, 25px);
+box-shadow: 2px 2px 2px #151515;
+padding: 0px 20px 0px 20px;
+z-index: -1;
+animation-name: siddharth;
+animation-duration: 1s;
+opacity: .83;
+}
+#outer:hover{
+    opacity: .95;
+    transition: .4s ease;
+}
+
+@keyframes siddharth
+{
+    0%{
+transform: translate(420px, 125px);
+    }
+    100%{
+      transform: translate(420px, 25px);  
+    }
+}
+
+#inner1
+{
+
+height: 70px;
+width: 300px;
+padding: 10px 15px 15px 15px;
+color: #800000;
+text-shadow: 2px 2px 3px #686868;
+font-family: "times new roman", times ;
+transform: translate(0px, -70px);
+z-index: -1;
+
+}
+
+#left1
+{
+	height: 250px;
+	width: 300px;
+	background-color: #DDFFFE;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #151515;
+	transform: translate(40px, -135px);
+	float: left;
+	z-index: -1;
+    animation-name: lefty;
+    animation-duration: 1s;
+    opacity: .83;
+  /*  animation-name: infi;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+*/
+
+
+}
+#left1:hover{
+    opacity: .95;
+    transition: .4s ease;
+}
+/*@keyframes infi
+{
+    0%{ opacity: .80; }
+    100%{ opacity: .92; }
+}*/
+@keyframes lefty
+{
+    0%{
+transform: translate(20px, -35px);
+    }
+    100%{
+      transform: translate(20px, -135px);  
+    }
+}
+
+#bottomr
+{
+
+height: 350px;
+	width: 700px;
+	background-color: #DDFFFE;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #151515;
+	transform: translate(120px,35px);
+	text-justify:inter-word;
+color: darkblue;
+font-family: "consolas", cursive;
+font-size: 14px;
+text-indent: 50px;
+padding: 20px;
+text-align: justify;
+float: left;
+animation-name: bright;
+animation-duration: 1s;
+opacity: .83; 
+
+
+
+}
+@keyframes bright
+{
+    0%{
+transform: translate(120px, 135px);
+    }
+    100%{
+      transform: translate(120px, 35px);  
+    }
+}
+#bottomr:hover{
+    opacity: .95;
+    transition: .4s ease;
+    
+    
+}
+
+
+h4{
+	font-family: "sans-serif", cursive;
+	padding:3px;
+	color: #1B3F8B;
+	text-align: left;
+z-index: -1;
+text-transform: uppercase;
+cursor: pointer;
+text-shadow: 1px 1px 1px #000752;
+}
+#left1 li
+{
+list-style-type: none;
+font-size: 16px;
+text-decoration: none;
+font-family: "consolas", cursive;
+z-index: -1;
+border-radius: 5px;
+padding: 5px;
+border-style: none;
+
+
+}
+
+
+
+#left1 li:hover{
+	background-color: #d7edfd;
+	transition: 0.5s ease;
+	text-shadow: 1px;
+	font-size: 115%;
+z-index: -1;
+
+
+}
+
+
+
+/* Dropdown Button */
+/*.dropbtn {
+   width: 150px;
+	height: 50px;
+	background-color: gainsboro;
+	border-radius: 10px;
+	border-color: transparent;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	box-shadow: 2px 2px dimgray;
+	transform: translate(0px, 50px);
+	padding: 15px;
+	font-family: "courier new", sans serif;
+z-index: -1;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/*.dropdown {
+    transform: translate(0px, 0px);
+    display: inline-block;
+
+    z-index: -1;
+}
+
+/* Dropdown Content (Hidden by Default) */
+/*.dropdown-content {
+    display: none;
+    transform: translate(0px, 100px);
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+/* Links inside the dropdown */
+/*.dropdown-content a {
+    color: black;
+    padding: 9px 13px;
+    text-decoration: none;
+    display: block;
+    z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #ddd;
+
+}
+
+/* Show the dropdown menu on hover */
+/*.dropdown:hover .dropdown-content {
+    display: block;
+    z-index: 2;
+    
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropdown:hover .dropbtn {
+    background-color:gray;
+    z-index: 1;
+}
+*/
+#inner2{
+
+		transform: translate(420px, 10px);
+		z-index: -1;
+
+}
+#inline{
+
+	list-style-type: none;
+    margin: 0;
+    padding: 7px;
+    overflow: hidden;
+    background-color: #151515;
+    width: 730px;
+    border-radius: 10px;
+    transform: translate(0px, 20px);
+    z-index: -1;
+    box-shadow: 2px 2px 1px #013540;
+    animation-name: inlinee;
+    animation-duration: 1s;
+    opacity: .9;
+
+}
+#inline:hover{
+    opacity: .95;
+}
+@keyframes inlinee
+{
+    0%{
+transform: translate(0px, 120px);
+    }
+    100%{
+      transform: translate(0px, 20px);  
+    }
+}
+
+#inline li {
+    float: left;
+    border-radius: 5px;
+    z-index: -1;
+}
+#inline a {
+    display: block;
+    color: #DDFFFE;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    z-index: -1;
+    font-family: "consolas", cursive;
+
+    
+}
+
+#inline a:hover {
+    background-color: #111111;
+     color: #89ffff;
+    z-index: -1;
+    opacity:0.87;
+    font-size: 105%;
+    transition:0.5s ease;
+    
+   
+}
+
+.dropbtn {
+    background-color: #2F4F4F;
+    color: #ace2fd;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transform: translate(0px, 100px);
+    width: 250px;
+    align-self: center; 
+    transform: translate(25px, 0px);
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translate(65px,0px);
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: list-item;
+}
+
+.dropdown-content a:hover {background-color: lightgray;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.4s;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #008585;
+    transition:0.4s;
+
+}
+a:link{
+	text-decoration: none;
+	color: blue;
+
+}
+a:visited{
+	color: darkcyan;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #426864;
+	transition: 0.3s;
+	text-decoration: underline;
+}
+a:active{
+
+	color: red;
+	text-decoration: underline;
+}
+
+
+
+#sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "consolas", cursive;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidenav p{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "consolas", cursive;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+#sidenav a:hover {
+    color: #baffe2;
+    font-size: 28px;
+    transition: .3s ease;
+}
+
+/* Position and style the close button (top right corner) */
+#sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.symbol{
+    font-size: 8px;
+}
+.symbol:hover{
+
+   font-size: 10px;
+}
+#open
+{
+    transform: translate(0px,0px);
+    z-index: 1;
+    color: white;
+    position: relative;
+}
+
+.container div{
+    width: 20px;
+    height: 3px;
+    background-color: lightblue;
+    margin: 4px;
+    z-index: 1;
+    transform: translate(0px, 5px);
+    
+
+}
+.container div:hover{
+    width: 26px;
+    height: 4px;
+    transition: 2s 
+
+}
+
+#footer { 
+
+
+    bottom:0;
+    left: 0;
+    position:fixed;
+    width: 350px;
+    background-color:#151515; 
+    color: lightblue;
+    height: 50px;
+    z-index: 0;
+    transition: margin-left .5s;
+    opacity: 0.7;
+    border-radius: 0px 10px 0px 0px;
+}
+#footer:hover{
+    opacity: .9;
+    transition: .4s ease;
+}
+#footer a:hover{
+    color: lightgreen;
+    font-size: 115%;
+    
+
+}
+
+/*#header{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color:#151515;
+
+
+}*/
+#head1{
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #212F3C;
+    height:35px;
+    position: fixed;
+    z-index: 1;
+    transition: margin-left .5s;
+    animation-name: head;
+    animation-duration: 1s;
+    
+}
+@keyframes head
+{
+    0%{
+transform: translate(0px, -35px);
+    }
+    100%{
+      transform: translate(0px, 0px);  
+    }
+}
+
+
+
+
+ #topnav{
+        padding: 0;
+        list-style: none;
+        background: #1C2833;
+        transition: margin-left .5s;
+
+    }
+#topnav li{
+
+        display: inline-block;
+        position: relative;
+        line-height: 16px;
+        text-align: left;
+    }
+#topnav li a{
+        display: inline-block;
+        padding: 5px 18px;
+        color: lightcyan;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "consolas", cursive;
+    }
+#topnav li a:hover{
+        color: lightcyan;
+        background: #17202A;
+        font-size: 105%;
+        transition:.3s ease;
+        text-decoration: underline;
+    }
+#topnav li ul.dropd{
+        min-width: 100%; /* Set width of the dropdown */
+        background: darkgray;
+        transition: .5s ease;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        text-align: center;
+        font-family: "consolas", cursive; 
+    }
+#topnav li:hover ul.dropd{
+        display: block;
+        background-color:#273746; 
+        transition: .4s ease; /* Display the dropdown */
+    }
+#topnav li ul.dropd li{
+        display: block;
+        text-decoration: underline;
+        font-size: 12px;
+    }
+
+/*#image{
+    
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000096;
+    width: 200px;
+    height: 200px;
+}*/
+#Info{
+    height: 500px;
+    width: 700px;
+    background-color: #DDFFFE;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #151515;
+   transform: translate(-133px,60px);
+    text-justify:inter-word;
+color: darkblue;
+font-family: "consolas", cursive;
+font-size: 14px;
+text-indent: 50px;
+padding: 20px;
+text-align: justify;
+float: right;
+animation-name: inf;
+animation-duration: 1s;
+opacity: .83; 
+
+
+
+
+}
+#Info:hover{
+    opacity: .95;
+    transition:.5s ease;
+}
+@keyframes inf
+{ 0%{
+transform: translate(-133px, 160px);
+    }
+    100%{
+      transform: translate(-133px, 60px);  
+    }
+
+}
+
+#Info img{
+    padding: 0;
+    border-radius: 10px;
+    border-style: none;
+    margin-top: 20px;
+    margin-left:135px;
+    margin-right: 100px;
+    width: 400px;
+    height: 240px;
+    box-shadow: 1px 1px 1px #151515;
+}
+#Info img:hover{
+    width: 420px;
+    height: 260px;
+    opacity: 1;
+    transition: .5s ease;
+    box-shadow: 2px 2px 2px #151515;
+}
